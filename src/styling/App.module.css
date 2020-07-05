@@ -1,0 +1,104 @@
+/**
+ *Global styles
+ */
+.App {
+  font-family: 'Montserrat';
+  background-color: black;
+}
+
+.App div {
+  margin-bottom: 0;
+}
+
+.App table {
+  color: white;
+  border: 0;
+}
+
+.App li {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/**
+ * Headings
+ */
+.App h1 {
+  color: #90D60D;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.App h3 {
+  color: #608026;
+	font-style: italic;
+}
+
+/**
+ * Smaller text
+ */
+.App p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.App figcaption {
+  color: #608026;
+}
+
+.Label {
+  color: white;
+  font-style: italic;
+}
+
+/**
+ * Menu bars
+ */
+.MenuBar {
+  height: 2.5rem;
+  line-height: 1.25rem;
+}
+
+ .SectionBar {
+   background-color: #28380b;
+ }
+
+/* For links and buttons */
+.App a {
+  color: #90D60D;
+}
+
+.App a:hover {
+  color: #A3F20F;
+  cursor: pointer;
+}
+
+/**
+ * Quote
+ */
+.QuoteSection {
+  padding-left: 1rem;
+  border-left: 0.5rem;
+  border-left-style: solid;
+  border-left-color: #90D60D;
+}
+
+.QuoteSection p {
+  color: white;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.QuoteSection cite {
+  color: #3A4D17;
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+/**
+ * Contact form (textarea and input)
+ */
+/* .Form {
+  color: #b2b2b2;
+} */
