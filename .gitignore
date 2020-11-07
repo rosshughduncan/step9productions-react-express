@@ -1,0 +1,7 @@
+# Ignore the following file types:
+# - SSL certificates
+# - Videos (.mp4)
+
+*.cert
+*.key
+*.mp4

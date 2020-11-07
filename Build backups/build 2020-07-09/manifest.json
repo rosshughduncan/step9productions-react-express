@@ -1,0 +1,15 @@
+{
+  "short_name": "Step 9 Producitons",
+  "name": "Step 9 Productions",
+  "icons": [
+    {
+      "src": "./images/Logo.png",
+      "sizes": "1000x150",
+      "type": "image"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
