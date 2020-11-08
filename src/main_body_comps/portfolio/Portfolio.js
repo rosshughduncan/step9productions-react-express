@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-//import { pubImg } from '../../global/globalFunctions';
-//import VideoPlayer from 'react-video-js-player';
+import { pubImg } from '../../global/globalFunctions';
+import VideoPlayer from 'react-video-js-player';
 
 const Portfolio = (props) => {
     return (
@@ -50,7 +50,6 @@ const Portfolio = (props) => {
                 width={'100%'}
             />
 
-            {/*
             <h3>Audio for Video</h3>
             <p>Reconstruction of the movie 'Raiders of the Lost Ark' (1981). The effects and
                 atmos were all re-sourced and re-edited to produce this interpretation of the famous
@@ -60,13 +59,6 @@ const Portfolio = (props) => {
                 </i>
             </p>
              <VideoPlayer src={pubImg('RaidersLostArkDemo.mp4')} width={'800px'}/>
-             <p>BBC Autumnwatch “Sheffield” segment. This is a post sound edit and mix of a cut
-                from the 2016 season of the programme, produced for a university assignment.
-                It achieved a first. <i>Disclaimer: this video was created for an academic assignment and
-                    is intended to be transformative under fair use. If the copyright holder of the
-                    original material has any issues, please get in touch via the Contact section.</i></p>
-            <VideoPlayer src={pubImg('AutumwatchSheffieldDemo3.mp4')} width={'800px'}/>
-            */}
 
             <h3>Audio for Spoken Word</h3>
             <p>'Don't Do Drugs Kids' - a 5 minute radio drama recorded and mixed as part of a group
@@ -84,13 +76,11 @@ const Portfolio = (props) => {
                 width={'100%'}
             />
 
-            {/*
             <h3>Audio for Games</h3>
             <p>Interactive Music for Shooter Games Presentation – produced for a university assignment, this
                 FMOD project is a music state machine for a multiplayer shooter game idea. This video
                 demonstrates the different states and how they apply to a gameplay scenario.</p>
             <VideoPlayer src={pubImg('ShooterGameMusic.mp4')} width={'800px'}/>
-            */}
         </div>
     );
 };
