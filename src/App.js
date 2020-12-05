@@ -25,7 +25,7 @@ class App extends Component {
     }
     // On Portfolio tab
     else {
-      this.setState({ sectionBarSelection: 'Audio Production' });
+      this.setState({ sectionBarSelection: 'Audio and Video Production' });
     }
   };
 

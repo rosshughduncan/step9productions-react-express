@@ -13,7 +13,7 @@ class SectionBar extends Component {
          ***********************/
         this.menuOptions = {
             'Home': ['Welcome', 'About'],
-            'Portfolio': ['Audio Production', 'Live Events']  
+            'Portfolio': ['Audio and Video Production', 'Live Events and Broadcasting']  
         };
 
         // Animations

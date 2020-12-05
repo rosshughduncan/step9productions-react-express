@@ -10,11 +10,33 @@ const EventsCrewList = (props) => {
                 the NEC in Birmingham and the prestigious Salisbury Playhouse theatre, not mentioning outdoor
                 festivals and corporate functions.
             </p>
-            <p><i>Note from Ross: Due to other work commitments and the situation surrounding COVID-19,
-                I am not currently working as a live technician. However, skills from positions
-                in this side of the industry are transferrable to other sectors of professional
-                audio, including studio engineering and music production, which is why I have left this part
-                of my website here as a record of my previous activities for the reader's interest.</i></p>
+            <p>
+                Ross is also multi-skilled in the broadcasting sector, having delivered as an audio techncian
+                and network {'&'} systems administator. Ross has Dante Certification Level 3 and specialises
+                in managing Audio-over-IP networks. Step 9 Productions can provide contractual services
+                in broadcasting studios for cabling, routing, microphone setup, desk scene management and 
+                networking.
+            </p>
+            <h3>Broadcasting Credits</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Studio</th>
+                        <th>Location</th>
+                        <th>Role</th>
+                        <th>Date(s)</th>
+                    </tr>
+                </thead>
+                <div className={classes.TableSeparator}/>
+                <tbody>
+                    <tr>
+                        <td><b>Radio Maria England</b></td>
+                        <td>Cambridge</td>
+                        <td>Audio and IT support technician</td>
+                        <td>Jul 2020 - present</td>
+                    </tr>
+                </tbody>
+            </table>
             <h3>Events Crew Credits</h3>
             <table>
                 <thead>
@@ -25,6 +47,7 @@ const EventsCrewList = (props) => {
                         <th>Date(s)</th>
                     </tr>
                 </thead>
+                <div className={classes.TableSeparator}/>
                 <tbody>
                     <tr>
                         <td><b>Mixed live music nights</b></td>

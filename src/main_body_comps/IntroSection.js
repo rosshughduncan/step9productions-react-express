@@ -4,9 +4,10 @@ import classes from '../styling/App.module.css';
 const IntroSection = (props) => {
     return (
         <div>
-            <p>Step 9 Productions is an audio engineering service that has provided mixing
-                and mastering, as well as live sound, lighting programming and crew skills
-                to the industry since 2018, based in Cambridge, UK.
+            <p>
+                Step 9 Productions is an audio engineering, media production and events
+                technician service. Providing: music mixing {'&'} mastering, broadcast production,
+                live sound, lighting programming and crew skills to the industry since 2018.
             </p>
             <p>Step 9 Productions strives to provide an objective, comprehensive and friendly
                 service for all kinds of audio projects. Previous happy clients have included

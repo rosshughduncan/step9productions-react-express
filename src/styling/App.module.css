@@ -2,7 +2,7 @@
  *Global styles
  */
 .App {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
 }
 
@@ -13,6 +13,13 @@
 .App table {
   color: white;
   border: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.App thead {
+  font-style: italic;
+  width: 100%;
 }
 
 .App li {
@@ -94,6 +101,14 @@
   color: #3A4D17;
   font-style: italic;
   font-size: 1.4rem;
+}
+
+/**
+ * Tables
+ */
+
+.TableSeparator {
+  padding-bottom: 0.2rem;
 }
 
 /**

@@ -55,9 +55,9 @@ class MainBodyController extends Component {
             }
         }
         else if (this.props.selectedHeader === 'Portfolio') {
-            if (this.props.selectedSection === 'Audio Production') {
+            if (this.props.selectedSection === 'Audio and Video Production') {
                 this.currentPageData = {
-                    headingText: "Audio Production Examples",
+                    headingText: "Audio and Video Production Examples",
                     image: {
                         source: '',
                         alt: ''
@@ -68,7 +68,7 @@ class MainBodyController extends Component {
             // Live events section
             else {
                 this.currentPageData = {
-                    headingText: "Live Technical Expertise",
+                    headingText: "Live and Broadcasting Technical Expertise",
                     image: {
                         source: 'TEDxSalisbury.jpg',
                         alt: "TEDx Salisbury at Salisbury Arts Centre, 2020"

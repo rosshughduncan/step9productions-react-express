@@ -6,14 +6,16 @@ import VideoPlayer from 'react-video-js-player';
 const Portfolio = (props) => {
     return (
         <div>
-            <p>With a musician and mobile DJ background and knowledge of multiple
-                music genres and scenes, as well as having used many types of 
-                digital and analogue gear (both in the studio and live), founder
-                Ross Duncan brings a focused attitude and attention to detail, putting
-                emphasis on communication at each step of the technical process to
-                iron out issues, along with practical degree experience in music
-                technology and a critically-trained ear, to help produce the best
-                results.</p>
+            <p>
+                With a musician and mobile DJ background, wide knowledge of
+                multiple music scenes and genres, and experience with many 
+                types of audio software and hardware, founder Ross Duncan brings a focused
+                attitude and attention to detail, putting emphasis on friendly
+                communication at each step of the technical process to iron out issues,
+                along with practical degree experience in music technology and a
+                critically-trained ear, to help produce the best results for your music,
+                broadcast or video project.
+            </p>
 
             <h3>Music Mixing and Mastering</h3>
             <p>Rude Edit – Orchard Ave EP: original drum {'&'} bass and UK garage music 
