@@ -1,3 +1,12 @@
+## Introduction
+
+This repository contains the code and files for the Step 9 Productions website, which is hosted here: https://step9productions.com/
+It contains a portfolio of audio production and live events technician work.
+
+All code and content is Copyright © 2020 Ross Duncan. All rights reserved. It is posted on GitHub for demonstration purposes only.
+
+It is written primarily with React.js and is hosted using the Apache httpd web server. Originally, it used Express.js, but when an HTTPS certificate was set up later on, Apache became the easier option.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
