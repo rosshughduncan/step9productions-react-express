@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import { pubImg } from '../../global/globalFunctions';
-import VideoPlayer from 'react-video-js-player';
+import SpotifyPlayer from 'react-spotify-player';
+import VideoJSPlayer from '../../global/VideoJSPlayer';
+import videojs from 'video.js';
+
+// react-video-js-player is no longer used
+//import VideoPlayer from 'react-video-js-player';
 
 let videoWidth;
 
@@ -17,6 +22,35 @@ const Portfolio = (props) => {
     else {
         videoWidth = `${windowInnerWidth}`;
     }
+
+    // VideoJS player options for each of the videos
+    const videoJsOptions_RaidersOfTheLostArk = {
+        autoplay: false,
+        controls: true,
+        sources: [{
+            src: pubImg('RaidersLostArkDemo.mp4'),
+            type: 'video/mp4'
+        }],
+        width: videoWidth
+    };
+    const videoJsOptions_FinlingoFinancialMarkets = {
+        autoplay: false,
+        controls: true,
+        sources: [{
+            src: pubImg('FinlingoIntroToBanking_FinancialMarkets.mp4'),
+            type: 'video/mp4'
+        }],
+        width: videoWidth
+    };
+    const videoJsOptions_ShooterGameMusic = {
+        autoplay: false,
+        controls: true,
+        sources: [{
+            src: pubImg('ShooterGameMusic.mp4'),
+            type: 'video/mp4'
+        }],
+        width: videoWidth
+    };
 
     return (
         <div>
@@ -42,6 +76,18 @@ const Portfolio = (props) => {
                 <div>
                     <div>
                         <h3>Audio for Spoken Word</h3>
+                    </div>
+                    <div>
+                        <p><b>Science and Faith with Radio Maria England</b> - a podcast series on exploring the relationship 
+                        between science and Christianity. Ross of Step 9 Productions is working on this project while serving as
+                        the radio station's broadcast engineer. The programme is produced and edited by a number of volunteers,
+                        with Ross training them and monitoring the project's progress. The final masters and quality control
+                        corrections are made by Ross.</p>
+                        <SpotifyPlayer
+                            uri={'spotify:episode:0PIX5bohOdotuZ9GDr1q3R'}
+                            size={{width: videoWidth, height: 200}}
+                            theme={'black'}
+                        />
                     </div>
                     <div>
                         <p><b>'Don't Do Drugs Kids'</b> - a 5 minute radio drama recorded and mixed as part of a group
@@ -139,8 +185,9 @@ const Portfolio = (props) => {
                             </i>
                             <br></br>
                             <br></br>
-                            <VideoPlayer src={pubImg('RaidersLostArkDemo.mp4')} width={videoWidth}/>
                         </p>
+                        
+                        <VideoJSPlayer { ...videoJsOptions_RaidersOfTheLostArk }/>
                     </div>
                     <div>
                         <p><b>Training Video for Finlingo (Financial Markets), part of their Introduction
@@ -154,13 +201,17 @@ const Portfolio = (props) => {
                             </a>
                             <br></br>
                             <br></br>
-                            <VideoPlayer src={pubImg('FinlingoIntroToBanking_FinancialMarkets.mp4')} width={videoWidth}/>
                         </p>
                     </div>
                 </div>
 
                 {/* Audio for games div */}
+                <div>
+                    <p>Shooter game music</p>
+                    
+                </div>
                 {/* See ShooterGameMusicUnused.js*/}
+                
             </div>
         </div>
     );

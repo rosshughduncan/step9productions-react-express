@@ -12,9 +12,11 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-player": "^2.5.0",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.3",
+    "react-spotify-player": "^1.0.4",
     "react-video-js-player": "^1.1.1",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "video.js": "^7.11.4"
   },
   "scripts": {
     "start": "react-scripts start",
