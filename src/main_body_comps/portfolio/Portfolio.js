@@ -3,7 +3,6 @@ import ReactPlayer from 'react-player';
 import { pubImg } from '../../global/globalFunctions';
 import SpotifyPlayer from 'react-spotify-player';
 import VideoJSPlayer from '../../global/VideoJSPlayer';
-import videojs from 'video.js';
 
 // react-video-js-player is no longer used
 //import VideoPlayer from 'react-video-js-player';
@@ -23,34 +22,23 @@ const Portfolio = (props) => {
         videoWidth = `${windowInnerWidth}`;
     }
 
+    // VideoJS options template
+    const videoJsOptions = (source) => {
+        return ({
+            autoplay: false,
+            controls: true,
+            sources: [{
+                src: pubImg(source),
+                type: 'video/mp4'
+            }],
+            width: videoWidth
+        });
+    };
+
     // VideoJS player options for each of the videos
-    const videoJsOptions_RaidersOfTheLostArk = {
-        autoplay: false,
-        controls: true,
-        sources: [{
-            src: pubImg('RaidersLostArkDemo.mp4'),
-            type: 'video/mp4'
-        }],
-        width: videoWidth
-    };
-    const videoJsOptions_FinlingoFinancialMarkets = {
-        autoplay: false,
-        controls: true,
-        sources: [{
-            src: pubImg('FinlingoIntroToBanking_FinancialMarkets.mp4'),
-            type: 'video/mp4'
-        }],
-        width: videoWidth
-    };
-    const videoJsOptions_ShooterGameMusic = {
-        autoplay: false,
-        controls: true,
-        sources: [{
-            src: pubImg('ShooterGameMusic.mp4'),
-            type: 'video/mp4'
-        }],
-        width: videoWidth
-    };
+    const videoJsOptions_RaidersOfTheLostArk = videoJsOptions('RaidersLostArkDemo.mp4');
+    const videoJsOptions_FinlingoFinancialMarkets = videoJsOptions('FinlingoIntroToBanking_FinancialMarkets.mp4');
+    const videoJsOptions_ShooterGameMusic = videoJsOptions('ShooterGameMusic.mp4');
 
     return (
         <div>
@@ -177,19 +165,6 @@ const Portfolio = (props) => {
                         <h3>Audio and Video Production</h3>
                     </div>
                     <div>
-                        <p><b>Reconstruction of the movie 'Raiders of the Lost Ark' (1981)</b>. The effects and
-                            atmos were all re-sourced and re-edited to produce this interpretation of the famous
-                            fight scene. <i>Disclaimer: this video was created for an academic assignment and is
-                                intended to be transformative under fair use. If the copyright holder of the
-                                original material has any issues, please get in touch via the Contact section.
-                            </i>
-                            <br></br>
-                            <br></br>
-                        </p>
-                        
-                        <VideoJSPlayer { ...videoJsOptions_RaidersOfTheLostArk }/>
-                    </div>
-                    <div>
                         <p><b>Training Video for Finlingo (Financial Markets), part of their Introduction
                         to Banking series.</b> Finlingo is a website and app teaching finance. Step 9
                         Productions edited and mixed the video and audio segments for their series of
@@ -202,16 +177,39 @@ const Portfolio = (props) => {
                             <br></br>
                             <br></br>
                         </p>
+                        <VideoJSPlayer { ...videoJsOptions_FinlingoFinancialMarkets }/>
+                    </div>
+                    <div>
+                        <p><b>Reconstruction of the movie 'Raiders of the Lost Ark' (1981)</b>. The effects and
+                            atmos were all re-sourced and re-edited to produce this interpretation of the famous
+                            fight scene. <i>Disclaimer: this video was created for an academic assignment and is
+                                intended to be transformative under fair use. If the copyright holder of the
+                                original material has any issues, please get in touch via the Contact section.
+                            </i>
+                            <br></br>
+                            <br></br>
+                        </p>
+                        <VideoJSPlayer { ...videoJsOptions_RaidersOfTheLostArk }/>
                     </div>
                 </div>
 
                 {/* Audio for games div */}
                 <div>
-                    <p>Shooter game music</p>
-                    
+                    <div>
+                        <h3>Audio for Games</h3>
+                    </div>
+                    <div>
+                        <p>
+                            <b>Interactive Music for Shooter Games Presentation</b> - produced for a university
+                            assignment, this FMOD project is a music state machine for a multiplayer shooter
+                            game idea. This video demonstrates the different states and how they apply to the
+                            gameplay scenario.
+                            <br></br>
+                            <br></br>
+                            <VideoJSPlayer { ...videoJsOptions_ShooterGameMusic }/>
+                        </p>
+                    </div>
                 </div>
-                {/* See ShooterGameMusicUnused.js*/}
-                
             </div>
         </div>
     );
